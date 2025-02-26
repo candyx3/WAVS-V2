@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Calibri', sans-serif;
+            background-image: url('static/kali.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1, h2, h3 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideInDown 1s ease-in-out;
+        }
+        p, li {
+            color: #ffffff;
+        }
+        .footer-text {
+            color: #000000; /* Black color */
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #00ffff,
+                0 0 20px #00ffff; /* Strong glow effect */
+            animation: pulse 2s infinite; /* Add a pulse animation */
+            transition: color 0.3s ease; /* Smooth transition for color changes */
+        }
+        .footer-text:hover {
+            color: #222; /* Darker gray on hover */
+        }
+        .feature-item {
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Web Vulnerability Scanner</a>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>About Us</h1>
+                <p>This web application is designed to help users identify common web vulnerabilities in websites. It scans for Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), Injection Flaws, SQL Injection, Open Redirect, and Server-Side Request Forgery (SSRF).</p>
+                <h2>Key Features</h2>
+                <div class="row">
+                    <div class="col-md-6 feature-item">
+                        <h3>XSS Scanning</h3>
+                        <p>Detects Cross-Site Scripting vulnerabilities.</p>
+                    </div>
+                    <div class="col-md-6 feature-item">
+                        <h3>CSRF Scanning</h3>
+                        <p>Detects Cross-Site Request Forgery vulnerabilities.</p>
+                    </div>
+                    <div class="col-md-6 feature-item">
+                        <h3>SQL Injection Scanning</h3>
+                        <p>Detects SQL Injection vulnerabilities.</p>
+                    </div>
+                    <div class="col-md-6 feature-item">
+                        <h3>Open Redirect Scanning</h3>
+                        <p>Detects Open Redirect vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Severity Levels</h2>
+                <p>In the context of vulnerability scanning, severity levels indicate the potential impact of a vulnerability. Here's what each level means:</p>
+                <ul>
+                    <li><strong>Low:</strong> Low severity vulnerabilities generally have minimal impact and are relatively easy to fix.</li>
+                    <li><strong>Medium:</strong> Medium severity vulnerabilities have a noticeable impact and may require more attention to fix.</li>
+                    <li><strong>High:</strong> High severity vulnerabilities have a significant impact and require immediate attention to fix, as they pose a serious threat to the security of the system/website.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="text-center mt-5 footer-text">Made by candyx3</p>
+</body>
+</html>
